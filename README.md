@@ -1,7 +1,7 @@
 # In DEV - NOT WORKING YET - Homebridge-Phantom-Devialet-Bridge
 
 homebridge-plugin for Devialet Phantom with Dialog.
-Inspire from the initial Denon and Marantz AVR control homebridge plugin ( https://github.com/stfnhmplr/homebridge-denon-marantz-avr ) and phantom-bridge ( https://github.com/da2001/phantom-bridge ): Thanks to them, we'll have just a few work to do in order to manage volume of Phantom devialet.
+Inspire from the initial Denon and Marantz AVR control homebridge plugin ( https://github.com/stfnhmplr/homebridge-denon-marantz-avr ) and phantom-bridge ( https://github.com/da2001/phantom-bridge ): Thanks to them, we'll have just a few work to do in order to manage Phantom devialet Volume via Dialog.
 
 This is a curent Dev and it's not working yet. we expect the plugin to be fuctional within the next month.
 
