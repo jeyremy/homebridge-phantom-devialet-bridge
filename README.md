@@ -1,4 +1,4 @@
-# Homebridge-Phantom-Devialet-Bridge
+# In DEV - NOT WORKING YET - Homebridge-Phantom-Devialet-Bridge
 
 homebridge-plugin for Devialet Phantom with Dialog.
 Inspire from the initial Denon and Marantz AVR control homebridge plugin ( https://github.com/stfnhmplr/homebridge-denon-marantz-avr ) and phantom-bridge ( https://github.com/da2001/phantom-bridge ): Thanks to them, we'll have just a few work to do in order to manage volume of Phantom devialet.
@@ -42,6 +42,6 @@ Example:
 ### notes
 If you are interested in setting the volume of your Phantom(s) with Siri, Only remember to not tell Siri "Set the light in the Living room to 100 %" ;) : we suggest, in homekit, to put your Devialet Light switch in a different Room in order to not have bad surprise setting something like "Turn on all light in the Living Room" :)
 
-homebridge-phantom-devialet-bridge was written by Jeremy Luisetti and the contribution of Steven Brockway
+homebridge-phantom-devialet-bridge was written by Jeremy and the contribution of Steven
 homebridge-marantz-volume was written by Robert Vorthman (thanks!)
 phantom-bridge was written by DA2001 ( thanks ! )
