@@ -1,15 +1,14 @@
-# Homebridge-Denon-Marantz-AVR
-[![Package Quality](http://npm.packagequality.com/shield/homebridge-denon.svg)](http://packagequality.com/#?package=homebridge-denon)
+# Homebridge-Phantom-Devialet-Bridge
 
-homebridge-plugin for Denon and Marantz AVR control with Apple-Homekit. Works with most Denon AVR since 2011.
+homebridge-plugin for Devialet Phantom with Dialog.
+Inspire from the initial Denon and Marantz AVR control homebridge plugin ( https://github.com/stfnhmplr/homebridge-denon-marantz-avr ) and phantom-bridge ( https://github.com/da2001/phantom-bridge ): Thanks to them, we'll have just a few work to do in order to manager volume of Phantom devialet.
 
-> With version 0.2.0 this plugin use the new speaker service (>= iOS  10). Please ensure your hap-nodejs and homebridge versions are up-to-date.
-Apples Home App currently doesn't support the Speaker Service. To use this service you can use a non official app like Elgato Eve.
+This is a curent Dev and it's working yet. we expect the plugin to be fuctional within the next month.
 
 # Installation
 Follow the instruction in [NPM](https://www.npmjs.com/package/homebridge) for the homebridge server installation. The plugin is published through [NPM](https://www.npmjs.com/package/homebridge-denon) and should be installed "globally" by typing:
 
-    sudo npm install -g homebridge-denon
+    sudo npm install -g homebridge-phantom-devialet-bridge
 
 # Configuration
 
@@ -24,15 +23,14 @@ Example:
           "port": 51826,
           "pin": "031-45-154"
       },
-      "description": "This is an example configuration file for homebridge denon plugin",
+      "description": "This is an example configuration file for homebridge Devialet Phantom Dialog plugin",
       "hint": "Always paste into jsonlint.com validation page before starting your homebridge, saves a lot of frustration",
       "accessories": [
           {
-              "accessory": "DenonMarantzAVR",
-              "name": "Denon LivingRoom",
-              "ip": "192.168.1.99",
-              "defaultInput": "IRADIO",
-              "defaultVolume": 35,
+              "accessory": "DevialetDialog",
+              "name": "Phatom Living room",
+              "ip": "192.168.0.99",
+              "defaultVolume": 30,
               "minVolume": 10,
               "maxVolume": 75,
               "doPolling": true,
@@ -41,41 +39,9 @@ Example:
       ]
   }
 
-## possible default inputs
-Setting the default input and the default volume is optional. The available inputs depends on your avr model. Please check the official manuals from Denon. https://usa.denon.com/us/downloads/manuals-and-downloads
-
-- 'CD'
-- 'SPOTIFY'
-- 'CBL/SAT'
-- 'SAT/CBL'
-- 'DVD'
-- 'BD' (Bluray)
-- 'GAME'
-- 'GAME2'
-- 'AUX1'
-- 'MPLAY' (Media Player)
-- 'USB/IPOD'
-- 'TUNER'
-- 'NETWORK'
-- 'TV'
-- 'IRADIO' (Internet Radio)
-- 'DOCK'
-- 'IPOD'
-- 'NET/USB'
-- 'RHAPSODY'
-- 'PANDORA'
-- 'LASTFM'
-- 'IRP'
-- 'FAVORITES'
-- 'SERVER'
-- 'FLICKR'
-- 'NAPSTER'
-- 'HDRADIO'
-
-## roadmap
-- add support for second zone
-
-
 ### notes
-If you are interested in setting the volume of your receiver with Siri than [this](https://github.com/robertvorthman/homebridge-marantz-volume) plugin might be a good addition. Only remember to not tell Siri "Set the light in the Living room to 100 %" ;)
+If you are interested in setting the volume of your Phantom(s) with Siri, Only remember to not tell Siri "Set the light in the Living room to 100 %" ;) : we suggest, in homekit, to put your Devialet Light switch in a different Room in order to not have bad surprise setting something like "Turn on all light in the Living Room" :)
+
+homebridge-phantom-devialet-bridge was written by Jeremy Luisetti and the contribution of Steven Brockway
 homebridge-marantz-volume was written by Robert Vorthman (thanks!)
+phantom-bridge was written by DA2001 ( thanks ! )
